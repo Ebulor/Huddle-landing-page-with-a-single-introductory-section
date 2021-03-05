@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.container{
+    padding: 30px;
+    padding-left: 5em;
+}
+header img{
+    width: 200px;
+}
+.content{
+    display: flex;
+    padding-top: 40px;
+}
+.text{
+    margin-left: 50px; 
+    width: 460px;  
+    margin-top: 5em 
+}
+.text h2{
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+.text p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+    color: white;
+    padding-bottom: 20px;
+}
+.text a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px 50px;
+    border-radius: 40px;
+    display: inline-block;
+    width: 150px;
+}
+.text a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.social{
+    display: flex;
+    justify-content: flex-end;
+}
+ion-icon {
+    font-size: 16px;
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+ion-icon:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+@media (max-width: 991px){
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+    }   
+    .container{
+        padding-left: 1em;
+        padding: 40px;
+    } 
+    .content{        
+        flex-direction: column;        
+    }
+    .image img{
+        width: 100%;
+    }
+    .text{
+        margin-left: 0;
+        width: 100%;
+        display: flex;  
+        flex-direction: column;      
+        align-items: center; 
+        margin-top: 40px;       
+    }
+    .text h2{
+        text-align: center;        
+    }
+    .text p{
+        width: 300px;
+        text-align: center;
+    }
+    .text a{        
+        width: 200px;
+    }
+    .social{
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;      
+        
+    }
+}
